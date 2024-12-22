@@ -1,0 +1,175 @@
+/* Overall footer styling */
+.footer {
+    background-color: #ff820e; /* Brand color background */
+    color: white;
+    padding: 3rem 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+/* Footer information section */
+.footer-info h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-info p {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+}
+
+.footer-info {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+/* Quick links section */
+.footer-links {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.footer-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 0.5rem 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #333;
+}
+
+/* Contact information section */
+.footer-contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Media Query for Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .footer-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .footer-info p {
+        font-size: 0.9rem;
+    }
+
+    .footer-links h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+
+    .footer-contact h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-contact p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Query for Mobile Phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .footer-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .footer-info p {
+        font-size: 0.8rem;
+    }
+
+    .footer-links h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-links a {
+        font-size: 0.8rem;
+    }
+
+    .footer-contact h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-contact p {
+        font-size: 0.8rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .footer-info, .footer-links, .footer-contact {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .footer-links ul {
+        padding-left: 0;
+    }
+}
+
+/* Media Query for Small Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .footer-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .footer-info p {
+        font-size: 0.7rem;
+    }
+
+    .footer-links h3 {
+        font-size: 1rem;
+    }
+
+    .footer-links a {
+        font-size: 0.7rem;
+    }
+
+    .footer-contact h3 {
+        font-size: 1rem;
+    }
+
+    .footer-contact p {
+        font-size: 0.7rem;
+    }
+}

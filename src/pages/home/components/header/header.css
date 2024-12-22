@@ -1,0 +1,55 @@
+header{
+    height: 10vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.6rem;
+    margin-bottom: 0;
+    z-index: 100;
+}
+.icon{
+    display: flex;
+    margin-right:5vw;
+}
+#basic-button{
+    color: black;
+    margin-right:3vw;
+  }
+img{
+    height: 10vh;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+#chat{
+    background-color: #25D366;
+}
+
+@media (max-width: 400px) {
+    header{
+        height: 8vh;
+        padding: 0.1rem;
+    }
+    img{
+        height: 8vh;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+    Button{
+       width: 10vw;
+       font-size: 0.5rem !important;
+       height: 3vh;
+
+    }   
+    #basic-button{
+        margin-right:1.5vw;
+
+      } 
+  }

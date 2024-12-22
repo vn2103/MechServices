@@ -1,0 +1,113 @@
+.car-service-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.car-service-offer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2rem;
+  height: 100%;
+}
+
+.offer-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.offer-subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price-section {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.plan-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.plan-price {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+.service {
+  margin-top: 20px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.service-item {
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  text-align: center;
+  flex: 1 1 calc(33.33% - 10px);
+  max-width: 100px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.view-more-button,
+.buy-now-button {
+  padding: 10px 20px;
+  width: 80%;
+  max-width: 300px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.blink {
+  animation: blink-animation 1.5s infinite; /* Slow continuous blink */
+}
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .view-more-button,
+  .buy-now-button {
+    padding: 8px 16px;
+    font-size: 0.7rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .view-more-button,
+  .buy-now-button {
+    padding: 6px 12px;
+    font-size: 0.65rem;
+    width: 100%;
+  }
+}

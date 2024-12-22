@@ -1,0 +1,97 @@
+/* Overall styling for the social section */
+.social {
+  text-align: center;
+  padding: 3rem;
+  margin: 20px;
+  background-color: rgba(247, 246, 246, 0.6);
+  font-family: Arial, sans-serif;
+}
+
+.social h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Container for the icons */
+.ico {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px; /* Space between icons */
+  flex-wrap: wrap; /* Allows icons to wrap on smaller screens */
+  justify-content: center; /* Centers the icons */
+}
+
+/* Social link button style */
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px; /* Circle size */
+  height: 70px;
+  border-radius: 50%; /* Makes the background circular */
+  background-color: transparent; /* Default background */
+  color: orange; /* Icon color */
+  text-decoration: none; /* Icon color */
+  border: 1.5px solid orange ;
+  font-size: 30px; /* Icon size */
+  transition: all 0.3s ease-in-out; /* Smooth animation */
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Shadow effect for hover */
+}
+
+/* Hover effect */
+.social-link:hover {
+  background-color: orange; /* Hover background */
+  color: white; /* Icon color on hover */
+  transform: scale(0.8); /* Slight zoom effect */
+  box-shadow: 0px 4px 15px rgba(255, 140, 0, 0.6); /* Glowing effect */
+}
+
+/* Icon styles */
+.social-link i {
+  line-height: 1; /* Centers the icon properly */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller screens */
+@media (max-width: 835px) {
+  .social {
+      padding: 2rem; /* Reduce padding for smaller devices */
+  }
+
+  .social h2 {
+      font-size: 20px; /* Adjust h2 font size */
+  }
+
+  .social-link {
+      width: 50px; /* Smaller icon size */
+      height: 50px; /* Smaller icon size */
+      font-size: 25px; /* Icon font size */
+  }
+
+  .ico {
+      gap: 20px; /* Reduce gap between icons */
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .social {
+      padding: 1.5rem; /* Reduce padding further on mobile */
+  }
+
+  .social h2 {
+      font-size: 18px; /* Adjust h2 font size for mobile */
+  }
+
+  .social-link {
+      width: 45px; /* Even smaller icon size */
+      height: 45px; /* Even smaller icon size */
+      font-size: 22px; /* Icon font size */
+  }
+
+  .ico {
+      gap: 15px; /* Further reduce gap between icons */
+  }
+}
